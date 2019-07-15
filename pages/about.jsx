@@ -7,7 +7,7 @@ const About = () => (
 			<title>About NEXT.JS Sample App</title>
 		</Head>
 		<h1>About</h1>
-		<p>This is about page</p>
+		<p>This is next.js application samply</p>
 	</Layout>
 );
 export default About;
