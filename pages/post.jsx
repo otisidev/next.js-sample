@@ -26,11 +26,11 @@ class Post extends React.Component {
 					</button>
 				</div>
 				<h1>{this.props.show.name}</h1>
-				<p>{this.props.show.summary.replace(/<[/]?p>/g, "")}</p>
-				<img
+				<p>{this.props.show.summary}</p>
+				{/* <img
 					className="rounded mx-auto d-block"
-					src={this.props.show.image.medium}
-				/>
+					src={this.props.show && this.props.show.image.medium}
+				/> */}
 			</Layout>
 		);
 	}
