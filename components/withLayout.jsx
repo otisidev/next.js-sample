@@ -18,7 +18,16 @@ const Layout = props => (
 		</main>
 		<footer className="footer mt-auto py-3">
 			<div className="container text-center">
-				<span className="text-muted">Developed by otisidev</span>
+				<span className="text-muted">
+					Developed by{" "}
+					<a
+						href="http://www.github.com/otisidev"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Otis Chiemezie (otisidev)
+					</a>
+				</span>
 			</div>
 		</footer>
 	</body>

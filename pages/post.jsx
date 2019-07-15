@@ -25,12 +25,31 @@ class Post extends React.Component {
 						Back
 					</button>
 				</div>
-				<h1>{this.props.show.name}</h1>
-				<p>{this.props.show.summary}</p>
-				{/* <img
-					className="rounded mx-auto d-block"
-					src={this.props.show && this.props.show.image.medium}
-				/> */}
+				<div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+					<div className="col p-4 d-flex flex-column position-static">
+						<strong className="d-inline-block mb-2 text-primary">
+							{this.props.show.language}
+						</strong>
+						<span className="d-inline-block mb-2">
+							Type: {this.props.show.type}
+						</span>
+						<h1 className="mb-0">{this.props.show.name}</h1>
+						<div className="mb-1 text-muted">{this.props.show.premiered}</div>
+
+						<p
+							className="card-text mb-auto"
+							dangerouslySetInnerHTML={{ __html: this.props.show.summary }}
+						/>
+					</div>
+					<div className="col-auto d-none d-lg-block">
+						<img
+							className="bd-placeholder-img"
+							width="200"
+							height="250"
+							src={this.props.show.image && this.props.show.image.medium}
+						/>
+					</div>
+				</div>
 			</Layout>
 		);
 	}
